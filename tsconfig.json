@@ -1,0 +1,28 @@
+/*
+Creamos este archivo para definir ciertas reglas
+*/
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["esnext"],
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "strict": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    /* 
+        Así le decimos a TypeScript que añada el soporte a los decoradores de 
+        Sequelize para que funcionen: 
+
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+        */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.test.ts"]
+}
